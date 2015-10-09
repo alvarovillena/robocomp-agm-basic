@@ -1,0 +1,63 @@
+spacePattern=3
+lineThickness=2.0
+fontName=Arial
+name=dominio
+vertexDiameter=40.0
+shortPattern=1
+nodeThickness=2.0
+fontSize=14
+longPattern=3
+===
+detectPerson : active(1)
+{
+	{
+		r:robot(-190,-105)
+	}
+	=>
+	{
+		pS:personState(-45,-10)
+		p:person(-160,-5)
+		r:robot(-230,-90)
+		r->p(knows)
+		p->pS(nothing)
+	}
+}
+
+greetPerson : active(1)
+{
+	{
+		p:person(-60,70)
+		r:robot(-145,-15)
+		pS:personState(65,105)
+		r->p(knows)
+		p->pS(nothing)
+	}
+	=>
+	{
+		pS:personState(80,50)
+		p:person(-75,5)
+		r:robot(-200,-80)
+		r->p(knows)
+		p->pS(greet)
+	}
+}
+
+satisfyPerson : active(1)
+{
+	{
+		p:person(-100,0)
+		r:robot(-230,-110)
+		pS:personState(140,80)
+		r->p(knows)
+		p->pS(greet)
+	}
+	=>
+	{
+		p:person(-40,-5)
+		r:robot(-165,-90)
+		pS:personState(215,55)
+		r->p(knows)
+		p->pS(happy)
+	}
+}
+

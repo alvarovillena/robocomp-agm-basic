@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rcmanager>
+
+ <generalInformation>
+  <editor path="gedit" dock="false" />
+  <timeouts fixed="1000.0" blink="300.0" />
+  <clicks switch="2.0" interval="400.0" />
+  <graph alpha="80.0" active="true" scale="200.0" />
+  <graphTiming idletime="1000.0" focustime="500.0" fasttime="10.0" fastperiod="2000.0" />
+  <simulation hookes="0.07" springlength="0.5" friction="0.4" step="0.5" fieldforce="20000.0" />
+ </generalInformation>
+
+ <node alias="executive" endpoint="agmexecutive:tcp -h localhost -p 10198">
+  <dependence alias="agent" />
+  <dependence alias="IS" />
+  <dependence alias="agentGetState" />
+  <workingDir path="/home/robocomp/" />
+  <upCommand command="rcremote localhost AGMExecutive /home/robocomp/AGM/tools/AGMExecutive_robocomp python AGMExecutive_robocomp.py --Ice.Config=/home/robocomp/robocomp/components/robocomp-agm-basic/files/executive.conf" />
+  <downCommand command="pkill -9 -f AGMExecutive_robocomp.py" />
+  <configFile path="gedit /home/robocomp/robocomp/components/robocomp-agm-basic/files/executive.conf" />
+  <xpos value="71.2124928428" />
+  <ypos value="-93.2312256157" />
+  <radius value="10.0" />
+  <color value="#0000AA" />
+ </node>
+
+ <node alias="IS" endpoint="IceStorm/TopicManager:default -h localhost -p 9999">
+  <workingDir path="/home/robocomp/" />
+  <upCommand command="rcremote localhost IS /home/robocomp/robocomp/components/robocomp-agm-basic/files/ icebox --Ice.Config=icebox.conf" />
+  <downCommand command="killall -9 icebox" />
+  <configFile path="gedit /home/robocomp/robocomp/components/robocomp-agm-basic/files/icebox.conf" />
+  <xpos value="230.030495417" />
+  <ypos value="-88.4735850124" />
+  <radius value="10.0" />
+  <color value="#FF3333" />
+ </node>
+
+ <node alias="base" endpoint="omnirobot:tcp -h localhost -p 12238">
+  <workingDir path="/home/robocomp/" />
+  <upCommand command="rcremote localhost base /home/robocomp rcis /home/robocomp/robocomp/components/robocomp-agm-basic/files/3Dmodels/autonomyLab/autonomyLabModel.xml" />
+  <downCommand command="killall -9 rcis" />
+  <configFile path="gedit /home/robocomp/robocomp/components/robocomp-agm-basic/files/3Dmodels/autonomyLab/autonomyLabModel.xml" />
+  <xpos value="-91.3827071871" />
+  <ypos value="209.59132423" />
+  <radius value="10.0" />
+  <color value="#AAAAAA" />
+ </node>
+
+ <node alias="joystick" endpoint="joystick:tcp -h localhost -p 10002">
+  <dependence alias="base" />
+  <workingDir path="/home/robocomp/" />
+  <upCommand command="rcremote localhost jstck /home/robocomp/robocomp/components/robocomp-agm-basic/components/joystickOmniComp/ ./bin/joystickOmniComp --Ice.Config=/home/robocomp/robocomp/components/robocomp-agm-basic/files/joystick.conf" />
+  <downCommand command="killall -9 joystickOmniComp" />
+  <configFile path="gedit /home/robocomp/robocomp/components/robocomp-agm-basic/files/joystick.conf" />
+  <xpos value="-165.73827792" />
+  <ypos value="98.9675938933" />
+  <radius value="10.0" />
+  <color value="#AAAAAA" />
+ </node>
+
+ <node alias="mission" endpoint="commonbehavior:tcp -h localhost -p 11247">
+  <dependence alias="executive" />
+  <workingDir path="/home/robocomp/" />
+  <upCommand command="rcremote localhost mission /home/robocomp/ agmmission --Ice.Config=/home/robocomp/robocomp/components/robocomp-agm-basic/files/mission.conf" />
+  <downCommand command="killall -9 agmmission" />
+  <configFile path="gedit /home/robocomp/robocomp/components/robocomp-agm-basic/files/mission.conf" />
+  <xpos value="-27.0716150167" />
+  <ypos value="-188.830565977" />
+  <radius value="10.0" />
+  <color value="#FFFFFF" />
+ </node>
+
+ <node alias="agentGetState" endpoint="agmcommonbehavior:tcp -h localhost -p 10335">
+  <dependence alias="joystick" />
+  <workingDir path="/home/robocomp/" />
+  <upCommand command="rcremote localhost agentGetState /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS ./bin/agentGetState /home/robocomp/robocomp/components/robocomp-agm-basic/files/agentGetState.conf" />
+  <downCommand command="killall -9 agentGetState" />
+  <configFile path="gedit /home/robocomp/robocomp/components/robocomp-agm-basic/files/agentGetState.conf" />
+  <xpos value="61.9023063784" />
+  <ypos value="94.892019328" />
+  <radius value="10.0" />
+  <color value="#FFFF00" />
+ </node>
+
+ <node alias="agent" endpoint="agmcommonbehavior:tcp -h localhost -p 10330">
+  <dependence alias="joystick" />
+  <workingDir path="/home/robocomp/" />
+  <upCommand command="rcremote localhost agent /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent ./bin/basicAgent /home/robocomp/robocomp/components/robocomp-agm-basic/files/agent.conf" />
+  <downCommand command="killall -9 basicAgent" />
+  <configFile path="gedit /home/robocomp/robocomp/components/robocomp-agm-basic/files/agent.conf" />
+  <xpos value="-78.9526945141" />
+  <ypos value="-32.9155608469" />
+  <radius value="10.0" />
+  <color value="#FFFF00" />
+ </node>
+
+</rcmanager>

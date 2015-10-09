@@ -1,0 +1,15 @@
+import "/robocomp/interfaces/IDSLs/RGBD.idsl";
+import "/robocomp/interfaces/IDSLs/OmniRobot.idsl";
+
+Component agentGetState
+{
+	Communications
+	{
+		requires RGBD,OmniRobot;
+	};
+
+	options agmagent;
+	language Cpp;
+	gui Qt(QWidget);
+};
+

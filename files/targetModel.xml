@@ -1,0 +1,13 @@
+<AGMModel>
+	<symbol id="1" type="robot">
+	</symbol>
+	<symbol id="per" type="person">
+	</symbol>
+	<symbol id="perSt" type="personState">
+	</symbol>
+	<link src="1" dst="per" label="knows">
+	</link>	
+	<link src="per" dst="perSt" label="happy">
+	</link>
+
+</AGMModel>

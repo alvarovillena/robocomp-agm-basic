@@ -35,7 +35,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent
@@ -55,49 +55,49 @@ include src/CMakeFiles/basicAgent.dir/flags.make
 src/CommonBehavior.cpp: /opt/robocomp/interfaces/CommonBehavior.ice
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating CommonBehavior.cpp and CommonBehavior.h from CommonBehavior.ice"
-	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/CommonBehavior.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/CommonBehavior.ice --output-dir .
 
 src/CommonBehavior.h: src/CommonBehavior.cpp
 
 src/AGMAgent.cpp: /opt/robocomp/interfaces/AGMAgent.ice
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating AGMAgent.cpp and AGMAgent.h from AGMAgent.ice"
-	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMAgent.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMAgent.ice --output-dir .
 
 src/AGMAgent.h: src/AGMAgent.cpp
 
 src/AGMWorldModel.cpp: /opt/robocomp/interfaces/AGMWorldModel.ice
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating AGMWorldModel.cpp and AGMWorldModel.h from AGMWorldModel.ice"
-	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMWorldModel.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMWorldModel.ice --output-dir .
 
 src/AGMWorldModel.h: src/AGMWorldModel.cpp
 
 src/AGMExecutive.cpp: /opt/robocomp/interfaces/AGMExecutive.ice
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating AGMExecutive.cpp and AGMExecutive.h from AGMExecutive.ice"
-	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMExecutive.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMExecutive.ice --output-dir .
 
 src/AGMExecutive.h: src/AGMExecutive.cpp
 
 src/Planning.cpp: /opt/robocomp/interfaces/Planning.ice
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Planning.cpp and Planning.h from Planning.ice"
-	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/Planning.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/Planning.ice --output-dir .
 
 src/Planning.h: src/Planning.cpp
 
 src/AGMCommonBehavior.cpp: /opt/robocomp/interfaces/AGMCommonBehavior.ice
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating AGMCommonBehavior.cpp and AGMCommonBehavior.h from AGMCommonBehavior.ice"
-	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMCommonBehavior.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMCommonBehavior.ice --output-dir .
 
 src/AGMCommonBehavior.h: src/AGMCommonBehavior.cpp
 
 src/OmniRobot.cpp: /opt/robocomp/interfaces/OmniRobot.ice
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating OmniRobot.cpp and OmniRobot.h from OmniRobot.ice"
-	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/OmniRobot.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/OmniRobot.ice --output-dir .
 
 src/OmniRobot.h: src/OmniRobot.cpp
 

@@ -9,9 +9,9 @@
 -I/classes
 -I/home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent
 -I/home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent/src/.
--I/home/alvaro/robocomp/classes
--I/home/alvaro/robocomp/libs
--I/home/alvaro/robocomp/interfaces
+-I/home/dmedina/robocomp/classes
+-I/home/dmedina/robocomp/libs
+-I/home/dmedina/robocomp/interfaces
 -I/home/robocomp/robocomp/components/robocomp-agm-basic/components/basicAgent
 -I/include
 -I/usr/include/qt4

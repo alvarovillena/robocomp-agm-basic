@@ -35,13 +35,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS
+CMAKE_SOURCE_DIR = /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS
+CMAKE_BINARY_DIR = /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/agentGetState.dir/depend.make
@@ -53,133 +53,133 @@ include src/CMakeFiles/agentGetState.dir/progress.make
 include src/CMakeFiles/agentGetState.dir/flags.make
 
 src/CommonBehavior.cpp: /opt/robocomp/interfaces/CommonBehavior.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating CommonBehavior.cpp and CommonBehavior.h from CommonBehavior.ice"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/CommonBehavior.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/CommonBehavior.ice --output-dir .
 
 src/CommonBehavior.h: src/CommonBehavior.cpp
 
 src/AGMAgent.cpp: /opt/robocomp/interfaces/AGMAgent.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating AGMAgent.cpp and AGMAgent.h from AGMAgent.ice"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMAgent.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMAgent.ice --output-dir .
 
 src/AGMAgent.h: src/AGMAgent.cpp
 
 src/AGMWorldModel.cpp: /opt/robocomp/interfaces/AGMWorldModel.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating AGMWorldModel.cpp and AGMWorldModel.h from AGMWorldModel.ice"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMWorldModel.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMWorldModel.ice --output-dir .
 
 src/AGMWorldModel.h: src/AGMWorldModel.cpp
 
 src/AGMExecutive.cpp: /opt/robocomp/interfaces/AGMExecutive.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating AGMExecutive.cpp and AGMExecutive.h from AGMExecutive.ice"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMExecutive.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMExecutive.ice --output-dir .
 
 src/AGMExecutive.h: src/AGMExecutive.cpp
 
 src/Planning.cpp: /opt/robocomp/interfaces/Planning.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Planning.cpp and Planning.h from Planning.ice"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/Planning.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/Planning.ice --output-dir .
 
 src/Planning.h: src/Planning.cpp
 
 src/AGMCommonBehavior.cpp: /opt/robocomp/interfaces/AGMCommonBehavior.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating AGMCommonBehavior.cpp and AGMCommonBehavior.h from AGMCommonBehavior.ice"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMCommonBehavior.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/AGMCommonBehavior.ice --output-dir .
 
 src/AGMCommonBehavior.h: src/AGMCommonBehavior.cpp
 
 src/RGBD.cpp: /opt/robocomp/interfaces/RGBD.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating RGBD.cpp and RGBD.h from RGBD.ice"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/RGBD.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/RGBD.ice --output-dir .
 
 src/RGBD.h: src/RGBD.cpp
 
 src/JointMotor.cpp: /opt/robocomp/interfaces/JointMotor.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating JointMotor.cpp and JointMotor.h from JointMotor.ice"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/JointMotor.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/JointMotor.ice --output-dir .
 
 src/JointMotor.h: src/JointMotor.cpp
 
 src/DifferentialRobot.cpp: /opt/robocomp/interfaces/DifferentialRobot.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating DifferentialRobot.cpp and DifferentialRobot.h from DifferentialRobot.ice"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/DifferentialRobot.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/DifferentialRobot.ice --output-dir .
 
 src/DifferentialRobot.h: src/DifferentialRobot.cpp
 
 src/OmniRobot.cpp: /opt/robocomp/interfaces/OmniRobot.ice
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating OmniRobot.cpp and OmniRobot.h from OmniRobot.ice"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/alvaro/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/OmniRobot.ice --output-dir .
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && slice2cpp -I/home/dmedina/robocomp//interfaces/ -I/opt/robocomp/interfaces -I. /opt/robocomp/interfaces/OmniRobot.ice --output-dir .
 
 src/OmniRobot.h: src/OmniRobot.cpp
 
 src/moc_specificworker.cxx: src/specificworker.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_specificworker.cxx"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificworker.cxx_parameters
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificworker.cxx_parameters
 
 src/moc_specificmonitor.cxx: src/specificmonitor.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_specificmonitor.cxx"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificmonitor.cxx_parameters
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificmonitor.cxx_parameters
 
-src/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx: /home/alvaro/robocomp/classes/agmInner/agmInner.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_13)
+src/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx: /home/robocomp/robocomp/classes/agmInner/agmInner.h
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __/__/__/__/__/classes/agmInner/moc_agmInner.cxx"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/__/__/__/__/__/classes/agmInner && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx_parameters
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/__/__/__/__/__/classes/agmInner && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx_parameters
 
 src/moc_genericmonitor.cxx: src/genericmonitor.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_genericmonitor.cxx"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericmonitor.cxx_parameters
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericmonitor.cxx_parameters
 
 src/moc_commonbehaviorI.cxx: src/commonbehaviorI.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_commonbehaviorI.cxx"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_commonbehaviorI.cxx_parameters
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_commonbehaviorI.cxx_parameters
 
 src/moc_genericworker.cxx: src/genericworker.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_genericworker.cxx"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericworker.cxx_parameters
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericworker.cxx_parameters
 
 src/moc_agmcommonbehaviorI.cxx: src/agmcommonbehaviorI.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_17)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_agmcommonbehaviorI.cxx"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmcommonbehaviorI.cxx_parameters
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmcommonbehaviorI.cxx_parameters
 
 src/moc_agmexecutivetopicI.cxx: src/agmexecutivetopicI.h
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_18)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_18)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_agmexecutivetopicI.cxx"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmexecutivetopicI.cxx_parameters
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/moc @/home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmexecutivetopicI.cxx_parameters
 
 src/ui_mainUI.h: src/mainUI.ui
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_19)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_mainUI.h"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/uic -o /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/ui_mainUI.h /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/mainUI.ui
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/lib/x86_64-linux-gnu/qt4/bin/uic -o /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/ui_mainUI.h /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/mainUI.ui
 
 src/CMakeFiles/agentGetState.dir/specificworker.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/specificworker.cpp.o: src/specificworker.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_20)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/specificworker.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/specificworker.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/specificworker.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/specificworker.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/specificworker.cpp
 
 src/CMakeFiles/agentGetState.dir/specificworker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/specificworker.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/specificworker.cpp > CMakeFiles/agentGetState.dir/specificworker.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/specificworker.cpp > CMakeFiles/agentGetState.dir/specificworker.cpp.i
 
 src/CMakeFiles/agentGetState.dir/specificworker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/specificworker.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/specificworker.cpp -o CMakeFiles/agentGetState.dir/specificworker.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/specificworker.cpp -o CMakeFiles/agentGetState.dir/specificworker.cpp.s
 
 src/CMakeFiles/agentGetState.dir/specificworker.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/specificworker.cpp.o.requires
@@ -192,17 +192,17 @@ src/CMakeFiles/agentGetState.dir/specificworker.cpp.o.provides.build: src/CMakeF
 
 src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.o: src/specificmonitor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_21)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/specificmonitor.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/specificmonitor.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/specificmonitor.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/specificmonitor.cpp
 
 src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/specificmonitor.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/specificmonitor.cpp > CMakeFiles/agentGetState.dir/specificmonitor.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/specificmonitor.cpp > CMakeFiles/agentGetState.dir/specificmonitor.cpp.i
 
 src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/specificmonitor.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/specificmonitor.cpp -o CMakeFiles/agentGetState.dir/specificmonitor.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/specificmonitor.cpp -o CMakeFiles/agentGetState.dir/specificmonitor.cpp.s
 
 src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.o.requires
@@ -213,88 +213,88 @@ src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.o.provides: src/CMakeFiles/
 
 src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.o.provides.build: src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.o
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o: /home/alvaro/robocomp/classes/agmInner/agmInner.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_22)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o -c /home/alvaro/robocomp/classes/agmInner/agmInner.cpp
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o: /home/robocomp/robocomp/classes/agmInner/agmInner.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_22)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o"
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o -c /home/robocomp/robocomp/classes/agmInner/agmInner.cpp
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/classes/agmInner/agmInner.cpp > CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.i
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.i"
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/classes/agmInner/agmInner.cpp > CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.i
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/classes/agmInner/agmInner.cpp -o CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.s
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.s"
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/classes/agmInner/agmInner.cpp -o CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.s
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o.requires:
-.PHONY : src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o.requires
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o.requires:
+.PHONY : src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o.requires
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o.provides: src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o.provides.build
-.PHONY : src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o.provides
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o.provides: src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o.provides.build
+.PHONY : src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o.provides
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o.provides.build: src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o.provides.build: src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o: /home/alvaro/robocomp/classes/rapplication/rapplication.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_23)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o -c /home/alvaro/robocomp/classes/rapplication/rapplication.cpp
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o: /home/robocomp/robocomp/classes/rapplication/rapplication.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_23)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o"
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o -c /home/robocomp/robocomp/classes/rapplication/rapplication.cpp
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.i
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.i"
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.i
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.s
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.s"
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.s
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o.requires:
-.PHONY : src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o.requires
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o.requires:
+.PHONY : src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o.requires
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o.provides: src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o.provides.build
-.PHONY : src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o.provides
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o.provides: src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o.provides.build
+.PHONY : src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o.provides
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o.provides.build: src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o.provides.build: src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o: /home/alvaro/robocomp/classes/qlog/qlog.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_24)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o -c /home/alvaro/robocomp/classes/qlog/qlog.cpp
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o: /home/robocomp/robocomp/classes/qlog/qlog.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_24)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o"
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o -c /home/robocomp/robocomp/classes/qlog/qlog.cpp
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/classes/qlog/qlog.cpp > CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.i
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.i"
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/classes/qlog/qlog.cpp > CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.i
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/classes/qlog/qlog.cpp -o CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.s
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.s"
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/classes/qlog/qlog.cpp -o CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.s
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o.requires:
-.PHONY : src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o.requires
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o.requires:
+.PHONY : src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o.requires
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o.provides: src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o.requires
-	$(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o.provides.build
-.PHONY : src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o.provides
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o.provides: src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o.provides.build
+.PHONY : src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o.provides
 
-src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o.provides.build: src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o
+src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o.provides.build: src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o
 
 src/CMakeFiles/agentGetState.dir/main.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/main.cpp.o: src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_25)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/main.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/main.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/main.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/main.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/main.cpp
 
 src/CMakeFiles/agentGetState.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/main.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/main.cpp > CMakeFiles/agentGetState.dir/main.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/main.cpp > CMakeFiles/agentGetState.dir/main.cpp.i
 
 src/CMakeFiles/agentGetState.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/main.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/main.cpp -o CMakeFiles/agentGetState.dir/main.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/main.cpp -o CMakeFiles/agentGetState.dir/main.cpp.s
 
 src/CMakeFiles/agentGetState.dir/main.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/main.cpp.o.requires
@@ -307,17 +307,17 @@ src/CMakeFiles/agentGetState.dir/main.cpp.o.provides.build: src/CMakeFiles/agent
 
 src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.o: src/genericmonitor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_26)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/genericmonitor.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/genericmonitor.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/genericmonitor.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/genericmonitor.cpp
 
 src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/genericmonitor.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/genericmonitor.cpp > CMakeFiles/agentGetState.dir/genericmonitor.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/genericmonitor.cpp > CMakeFiles/agentGetState.dir/genericmonitor.cpp.i
 
 src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/genericmonitor.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/genericmonitor.cpp -o CMakeFiles/agentGetState.dir/genericmonitor.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/genericmonitor.cpp -o CMakeFiles/agentGetState.dir/genericmonitor.cpp.s
 
 src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.o.requires
@@ -330,17 +330,17 @@ src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.o.provides.build: src/CMakeF
 
 src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.o: src/commonbehaviorI.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_27)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/commonbehaviorI.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/commonbehaviorI.cpp
 
 src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/commonbehaviorI.cpp > CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/commonbehaviorI.cpp > CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.i
 
 src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/commonbehaviorI.cpp -o CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/commonbehaviorI.cpp -o CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.s
 
 src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.o.requires
@@ -353,17 +353,17 @@ src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.o.provides.build: src/CMake
 
 src/CMakeFiles/agentGetState.dir/genericworker.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/genericworker.cpp.o: src/genericworker.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_28)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/genericworker.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/genericworker.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/genericworker.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/genericworker.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/genericworker.cpp
 
 src/CMakeFiles/agentGetState.dir/genericworker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/genericworker.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/genericworker.cpp > CMakeFiles/agentGetState.dir/genericworker.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/genericworker.cpp > CMakeFiles/agentGetState.dir/genericworker.cpp.i
 
 src/CMakeFiles/agentGetState.dir/genericworker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/genericworker.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/genericworker.cpp -o CMakeFiles/agentGetState.dir/genericworker.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/genericworker.cpp -o CMakeFiles/agentGetState.dir/genericworker.cpp.s
 
 src/CMakeFiles/agentGetState.dir/genericworker.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/genericworker.cpp.o.requires
@@ -376,17 +376,17 @@ src/CMakeFiles/agentGetState.dir/genericworker.cpp.o.provides.build: src/CMakeFi
 
 src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.o: src/agmcommonbehaviorI.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_29)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/agmcommonbehaviorI.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/agmcommonbehaviorI.cpp
 
 src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/agmcommonbehaviorI.cpp > CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/agmcommonbehaviorI.cpp > CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.i
 
 src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/agmcommonbehaviorI.cpp -o CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/agmcommonbehaviorI.cpp -o CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.s
 
 src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.o.requires
@@ -399,17 +399,17 @@ src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.o.provides.build: src/CM
 
 src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.o: src/agmexecutivetopicI.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_30)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/agmexecutivetopicI.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/agmexecutivetopicI.cpp
 
 src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/agmexecutivetopicI.cpp > CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/agmexecutivetopicI.cpp > CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.i
 
 src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/agmexecutivetopicI.cpp -o CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/agmexecutivetopicI.cpp -o CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.s
 
 src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.o.requires
@@ -422,17 +422,17 @@ src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.o.provides.build: src/CM
 
 src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.o: src/CommonBehavior.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_31)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_31)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/CommonBehavior.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/CommonBehavior.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/CommonBehavior.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/CommonBehavior.cpp
 
 src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/CommonBehavior.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/CommonBehavior.cpp > CMakeFiles/agentGetState.dir/CommonBehavior.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/CommonBehavior.cpp > CMakeFiles/agentGetState.dir/CommonBehavior.cpp.i
 
 src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/CommonBehavior.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/CommonBehavior.cpp -o CMakeFiles/agentGetState.dir/CommonBehavior.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/CommonBehavior.cpp -o CMakeFiles/agentGetState.dir/CommonBehavior.cpp.s
 
 src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.o.requires
@@ -445,17 +445,17 @@ src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.o.provides.build: src/CMakeF
 
 src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.o: src/AGMAgent.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_32)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_32)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/AGMAgent.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMAgent.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/AGMAgent.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMAgent.cpp
 
 src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/AGMAgent.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMAgent.cpp > CMakeFiles/agentGetState.dir/AGMAgent.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMAgent.cpp > CMakeFiles/agentGetState.dir/AGMAgent.cpp.i
 
 src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/AGMAgent.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMAgent.cpp -o CMakeFiles/agentGetState.dir/AGMAgent.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMAgent.cpp -o CMakeFiles/agentGetState.dir/AGMAgent.cpp.s
 
 src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.o.requires
@@ -468,17 +468,17 @@ src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.o.provides.build: src/CMakeFiles/a
 
 src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.o: src/AGMWorldModel.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_33)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_33)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMWorldModel.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMWorldModel.cpp
 
 src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMWorldModel.cpp > CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMWorldModel.cpp > CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.i
 
 src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMWorldModel.cpp -o CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMWorldModel.cpp -o CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.s
 
 src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.o.requires
@@ -491,17 +491,17 @@ src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.o.provides.build: src/CMakeFi
 
 src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.o: src/AGMExecutive.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_34)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_34)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/AGMExecutive.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMExecutive.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/AGMExecutive.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMExecutive.cpp
 
 src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/AGMExecutive.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMExecutive.cpp > CMakeFiles/agentGetState.dir/AGMExecutive.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMExecutive.cpp > CMakeFiles/agentGetState.dir/AGMExecutive.cpp.i
 
 src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/AGMExecutive.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMExecutive.cpp -o CMakeFiles/agentGetState.dir/AGMExecutive.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMExecutive.cpp -o CMakeFiles/agentGetState.dir/AGMExecutive.cpp.s
 
 src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.o.requires
@@ -514,17 +514,17 @@ src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.o.provides.build: src/CMakeFil
 
 src/CMakeFiles/agentGetState.dir/Planning.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/Planning.cpp.o: src/Planning.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_35)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/Planning.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/Planning.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/Planning.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/Planning.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/Planning.cpp
 
 src/CMakeFiles/agentGetState.dir/Planning.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/Planning.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/Planning.cpp > CMakeFiles/agentGetState.dir/Planning.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/Planning.cpp > CMakeFiles/agentGetState.dir/Planning.cpp.i
 
 src/CMakeFiles/agentGetState.dir/Planning.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/Planning.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/Planning.cpp -o CMakeFiles/agentGetState.dir/Planning.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/Planning.cpp -o CMakeFiles/agentGetState.dir/Planning.cpp.s
 
 src/CMakeFiles/agentGetState.dir/Planning.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/Planning.cpp.o.requires
@@ -537,17 +537,17 @@ src/CMakeFiles/agentGetState.dir/Planning.cpp.o.provides.build: src/CMakeFiles/a
 
 src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.o: src/AGMCommonBehavior.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_36)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_36)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMCommonBehavior.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMCommonBehavior.cpp
 
 src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMCommonBehavior.cpp > CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMCommonBehavior.cpp > CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.i
 
 src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMCommonBehavior.cpp -o CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/AGMCommonBehavior.cpp -o CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.s
 
 src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.o.requires
@@ -560,17 +560,17 @@ src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.o.provides.build: src/CMa
 
 src/CMakeFiles/agentGetState.dir/RGBD.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/RGBD.cpp.o: src/RGBD.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_37)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_37)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/RGBD.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/RGBD.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/RGBD.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/RGBD.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/RGBD.cpp
 
 src/CMakeFiles/agentGetState.dir/RGBD.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/RGBD.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/RGBD.cpp > CMakeFiles/agentGetState.dir/RGBD.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/RGBD.cpp > CMakeFiles/agentGetState.dir/RGBD.cpp.i
 
 src/CMakeFiles/agentGetState.dir/RGBD.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/RGBD.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/RGBD.cpp -o CMakeFiles/agentGetState.dir/RGBD.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/RGBD.cpp -o CMakeFiles/agentGetState.dir/RGBD.cpp.s
 
 src/CMakeFiles/agentGetState.dir/RGBD.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/RGBD.cpp.o.requires
@@ -583,17 +583,17 @@ src/CMakeFiles/agentGetState.dir/RGBD.cpp.o.provides.build: src/CMakeFiles/agent
 
 src/CMakeFiles/agentGetState.dir/JointMotor.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/JointMotor.cpp.o: src/JointMotor.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_38)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_38)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/JointMotor.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/JointMotor.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/JointMotor.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/JointMotor.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/JointMotor.cpp
 
 src/CMakeFiles/agentGetState.dir/JointMotor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/JointMotor.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/JointMotor.cpp > CMakeFiles/agentGetState.dir/JointMotor.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/JointMotor.cpp > CMakeFiles/agentGetState.dir/JointMotor.cpp.i
 
 src/CMakeFiles/agentGetState.dir/JointMotor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/JointMotor.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/JointMotor.cpp -o CMakeFiles/agentGetState.dir/JointMotor.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/JointMotor.cpp -o CMakeFiles/agentGetState.dir/JointMotor.cpp.s
 
 src/CMakeFiles/agentGetState.dir/JointMotor.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/JointMotor.cpp.o.requires
@@ -606,17 +606,17 @@ src/CMakeFiles/agentGetState.dir/JointMotor.cpp.o.provides.build: src/CMakeFiles
 
 src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.o: src/DifferentialRobot.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_39)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/DifferentialRobot.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/DifferentialRobot.cpp
 
 src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/DifferentialRobot.cpp > CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/DifferentialRobot.cpp > CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.i
 
 src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/DifferentialRobot.cpp -o CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/DifferentialRobot.cpp -o CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.s
 
 src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.o.requires
@@ -629,17 +629,17 @@ src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.o.provides.build: src/CMa
 
 src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.o: src/OmniRobot.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_40)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_40)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/OmniRobot.cpp.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/OmniRobot.cpp
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/OmniRobot.cpp.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/OmniRobot.cpp
 
 src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/OmniRobot.cpp.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/OmniRobot.cpp > CMakeFiles/agentGetState.dir/OmniRobot.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/OmniRobot.cpp > CMakeFiles/agentGetState.dir/OmniRobot.cpp.i
 
 src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/OmniRobot.cpp.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/OmniRobot.cpp -o CMakeFiles/agentGetState.dir/OmniRobot.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/OmniRobot.cpp -o CMakeFiles/agentGetState.dir/OmniRobot.cpp.s
 
 src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.o.requires
@@ -652,17 +652,17 @@ src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.o.provides.build: src/CMakeFiles/
 
 src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.o: src/moc_specificworker.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_41)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_specificworker.cxx.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificworker.cxx
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_specificworker.cxx.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificworker.cxx
 
 src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/moc_specificworker.cxx.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificworker.cxx > CMakeFiles/agentGetState.dir/moc_specificworker.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificworker.cxx > CMakeFiles/agentGetState.dir/moc_specificworker.cxx.i
 
 src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/moc_specificworker.cxx.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificworker.cxx -o CMakeFiles/agentGetState.dir/moc_specificworker.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificworker.cxx -o CMakeFiles/agentGetState.dir/moc_specificworker.cxx.s
 
 src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.o.requires
@@ -675,17 +675,17 @@ src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.o.provides.build: src/CM
 
 src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.o: src/moc_specificmonitor.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_42)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_42)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificmonitor.cxx
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificmonitor.cxx
 
 src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificmonitor.cxx > CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificmonitor.cxx > CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.i
 
 src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificmonitor.cxx -o CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_specificmonitor.cxx -o CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.s
 
 src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.o.requires
@@ -698,17 +698,17 @@ src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.o.provides.build: src/C
 
 src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.o: src/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_43)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx
 
 src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx > CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx > CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.i
 
 src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx -o CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx -o CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.s
 
 src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.o.requires
@@ -721,17 +721,17 @@ src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cx
 
 src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.o: src/moc_genericmonitor.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_44)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_44)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericmonitor.cxx
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericmonitor.cxx
 
 src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericmonitor.cxx > CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericmonitor.cxx > CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.i
 
 src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericmonitor.cxx -o CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericmonitor.cxx -o CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.s
 
 src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.o.requires
@@ -744,17 +744,17 @@ src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.o.provides.build: src/CM
 
 src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.o: src/moc_commonbehaviorI.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_45)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_commonbehaviorI.cxx
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_commonbehaviorI.cxx
 
 src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_commonbehaviorI.cxx > CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_commonbehaviorI.cxx > CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.i
 
 src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_commonbehaviorI.cxx -o CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_commonbehaviorI.cxx -o CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.s
 
 src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.o.requires
@@ -767,17 +767,17 @@ src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.o.provides.build: src/C
 
 src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.o: src/moc_genericworker.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_46)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_46)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_genericworker.cxx.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericworker.cxx
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_genericworker.cxx.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericworker.cxx
 
 src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/moc_genericworker.cxx.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericworker.cxx > CMakeFiles/agentGetState.dir/moc_genericworker.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericworker.cxx > CMakeFiles/agentGetState.dir/moc_genericworker.cxx.i
 
 src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/moc_genericworker.cxx.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericworker.cxx -o CMakeFiles/agentGetState.dir/moc_genericworker.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_genericworker.cxx -o CMakeFiles/agentGetState.dir/moc_genericworker.cxx.s
 
 src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.o.requires
@@ -790,17 +790,17 @@ src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.o.provides.build: src/CMa
 
 src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.o: src/moc_agmcommonbehaviorI.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_47)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_47)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmcommonbehaviorI.cxx
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmcommonbehaviorI.cxx
 
 src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmcommonbehaviorI.cxx > CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmcommonbehaviorI.cxx > CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.i
 
 src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmcommonbehaviorI.cxx -o CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmcommonbehaviorI.cxx -o CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.s
 
 src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.o.requires
@@ -813,17 +813,17 @@ src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.o.provides.build: sr
 
 src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.o: src/CMakeFiles/agentGetState.dir/flags.make
 src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.o: src/moc_agmexecutivetopicI.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles $(CMAKE_PROGRESS_48)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.o"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.o -c /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmexecutivetopicI.cxx
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.o -c /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmexecutivetopicI.cxx
 
 src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.i"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmexecutivetopicI.cxx > CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmexecutivetopicI.cxx > CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.i
 
 src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.s"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmexecutivetopicI.cxx -o CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/moc_agmexecutivetopicI.cxx -o CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.s
 
 src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.o.requires:
 .PHONY : src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.o.requires
@@ -838,9 +838,9 @@ src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.o.provides.build: sr
 agentGetState_OBJECTS = \
 "CMakeFiles/agentGetState.dir/specificworker.cpp.o" \
 "CMakeFiles/agentGetState.dir/specificmonitor.cpp.o" \
-"CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o" \
-"CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o" \
-"CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o" \
+"CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o" \
+"CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o" \
+"CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o" \
 "CMakeFiles/agentGetState.dir/main.cpp.o" \
 "CMakeFiles/agentGetState.dir/genericmonitor.cpp.o" \
 "CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.o" \
@@ -871,9 +871,9 @@ agentGetState_EXTERNAL_OBJECTS =
 
 bin/agentGetState: src/CMakeFiles/agentGetState.dir/specificworker.cpp.o
 bin/agentGetState: src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.o
-bin/agentGetState: src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o
-bin/agentGetState: src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o
-bin/agentGetState: src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o
+bin/agentGetState: src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o
+bin/agentGetState: src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o
+bin/agentGetState: src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o
 bin/agentGetState: src/CMakeFiles/agentGetState.dir/main.cpp.o
 bin/agentGetState: src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.o
 bin/agentGetState: src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.o
@@ -909,7 +909,7 @@ bin/agentGetState: /usr/lib/x86_64-linux-gnu/libQtXml.so
 bin/agentGetState: /usr/lib/x86_64-linux-gnu/libQtCore.so
 bin/agentGetState: src/CMakeFiles/agentGetState.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../bin/agentGetState"
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/agentGetState.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/agentGetState.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/agentGetState.dir/build: bin/agentGetState
@@ -917,9 +917,9 @@ src/CMakeFiles/agentGetState.dir/build: bin/agentGetState
 
 src/CMakeFiles/agentGetState.dir/requires: src/CMakeFiles/agentGetState.dir/specificworker.cpp.o.requires
 src/CMakeFiles/agentGetState.dir/requires: src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.o.requires
-src/CMakeFiles/agentGetState.dir/requires: src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o.requires
-src/CMakeFiles/agentGetState.dir/requires: src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o.requires
-src/CMakeFiles/agentGetState.dir/requires: src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o.requires
+src/CMakeFiles/agentGetState.dir/requires: src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o.requires
+src/CMakeFiles/agentGetState.dir/requires: src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o.requires
+src/CMakeFiles/agentGetState.dir/requires: src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o.requires
 src/CMakeFiles/agentGetState.dir/requires: src/CMakeFiles/agentGetState.dir/main.cpp.o.requires
 src/CMakeFiles/agentGetState.dir/requires: src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.o.requires
 src/CMakeFiles/agentGetState.dir/requires: src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.o.requires
@@ -947,7 +947,7 @@ src/CMakeFiles/agentGetState.dir/requires: src/CMakeFiles/agentGetState.dir/moc_
 .PHONY : src/CMakeFiles/agentGetState.dir/requires
 
 src/CMakeFiles/agentGetState.dir/clean:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && $(CMAKE_COMMAND) -P CMakeFiles/agentGetState.dir/cmake_clean.cmake
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src && $(CMAKE_COMMAND) -P CMakeFiles/agentGetState.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/agentGetState.dir/clean
 
 src/CMakeFiles/agentGetState.dir/depend: src/CommonBehavior.cpp
@@ -979,6 +979,6 @@ src/CMakeFiles/agentGetState.dir/depend: src/moc_genericworker.cxx
 src/CMakeFiles/agentGetState.dir/depend: src/moc_agmcommonbehaviorI.cxx
 src/CMakeFiles/agentGetState.dir/depend: src/moc_agmexecutivetopicI.cxx
 src/CMakeFiles/agentGetState.dir/depend: src/ui_mainUI.h
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/CMakeFiles/agentGetState.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/CMakeFiles/agentGetState.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/agentGetState.dir/depend
 

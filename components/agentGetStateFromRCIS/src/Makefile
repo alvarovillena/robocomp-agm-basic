@@ -39,13 +39,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS
+CMAKE_SOURCE_DIR = /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS
+CMAKE_BINARY_DIR = /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/alvaro/robocomp/components/robocomp-agm-basic/component
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -113,14 +113,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(CMAKE_COMMAND) -E cmake_progress_start /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/CMakeFiles/progress.marks
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles 0
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(CMAKE_COMMAND) -E cmake_progress_start /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/src/CMakeFiles/progress.marks
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -129,22 +129,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/agentGetState.dir/rule:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/agentGetState.dir/rule
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/agentGetState.dir/rule
 .PHONY : src/CMakeFiles/agentGetState.dir/rule
 
 # Convenience name for target.
@@ -153,7 +153,7 @@ agentGetState: src/CMakeFiles/agentGetState.dir/rule
 
 # fast build rule for target.
 agentGetState/fast:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/build
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/build
 .PHONY : agentGetState/fast
 
 AGMAgent.o: AGMAgent.cpp.o
@@ -161,7 +161,7 @@ AGMAgent.o: AGMAgent.cpp.o
 
 # target to build an object file
 AGMAgent.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.o
 .PHONY : AGMAgent.cpp.o
 
 AGMAgent.i: AGMAgent.cpp.i
@@ -169,7 +169,7 @@ AGMAgent.i: AGMAgent.cpp.i
 
 # target to preprocess a source file
 AGMAgent.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.i
 .PHONY : AGMAgent.cpp.i
 
 AGMAgent.s: AGMAgent.cpp.s
@@ -177,7 +177,7 @@ AGMAgent.s: AGMAgent.cpp.s
 
 # target to generate assembly for a file
 AGMAgent.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMAgent.cpp.s
 .PHONY : AGMAgent.cpp.s
 
 AGMCommonBehavior.o: AGMCommonBehavior.cpp.o
@@ -185,7 +185,7 @@ AGMCommonBehavior.o: AGMCommonBehavior.cpp.o
 
 # target to build an object file
 AGMCommonBehavior.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.o
 .PHONY : AGMCommonBehavior.cpp.o
 
 AGMCommonBehavior.i: AGMCommonBehavior.cpp.i
@@ -193,7 +193,7 @@ AGMCommonBehavior.i: AGMCommonBehavior.cpp.i
 
 # target to preprocess a source file
 AGMCommonBehavior.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.i
 .PHONY : AGMCommonBehavior.cpp.i
 
 AGMCommonBehavior.s: AGMCommonBehavior.cpp.s
@@ -201,7 +201,7 @@ AGMCommonBehavior.s: AGMCommonBehavior.cpp.s
 
 # target to generate assembly for a file
 AGMCommonBehavior.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMCommonBehavior.cpp.s
 .PHONY : AGMCommonBehavior.cpp.s
 
 AGMExecutive.o: AGMExecutive.cpp.o
@@ -209,7 +209,7 @@ AGMExecutive.o: AGMExecutive.cpp.o
 
 # target to build an object file
 AGMExecutive.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.o
 .PHONY : AGMExecutive.cpp.o
 
 AGMExecutive.i: AGMExecutive.cpp.i
@@ -217,7 +217,7 @@ AGMExecutive.i: AGMExecutive.cpp.i
 
 # target to preprocess a source file
 AGMExecutive.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.i
 .PHONY : AGMExecutive.cpp.i
 
 AGMExecutive.s: AGMExecutive.cpp.s
@@ -225,7 +225,7 @@ AGMExecutive.s: AGMExecutive.cpp.s
 
 # target to generate assembly for a file
 AGMExecutive.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMExecutive.cpp.s
 .PHONY : AGMExecutive.cpp.s
 
 AGMWorldModel.o: AGMWorldModel.cpp.o
@@ -233,7 +233,7 @@ AGMWorldModel.o: AGMWorldModel.cpp.o
 
 # target to build an object file
 AGMWorldModel.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.o
 .PHONY : AGMWorldModel.cpp.o
 
 AGMWorldModel.i: AGMWorldModel.cpp.i
@@ -241,7 +241,7 @@ AGMWorldModel.i: AGMWorldModel.cpp.i
 
 # target to preprocess a source file
 AGMWorldModel.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.i
 .PHONY : AGMWorldModel.cpp.i
 
 AGMWorldModel.s: AGMWorldModel.cpp.s
@@ -249,7 +249,7 @@ AGMWorldModel.s: AGMWorldModel.cpp.s
 
 # target to generate assembly for a file
 AGMWorldModel.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/AGMWorldModel.cpp.s
 .PHONY : AGMWorldModel.cpp.s
 
 CommonBehavior.o: CommonBehavior.cpp.o
@@ -257,7 +257,7 @@ CommonBehavior.o: CommonBehavior.cpp.o
 
 # target to build an object file
 CommonBehavior.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.o
 .PHONY : CommonBehavior.cpp.o
 
 CommonBehavior.i: CommonBehavior.cpp.i
@@ -265,7 +265,7 @@ CommonBehavior.i: CommonBehavior.cpp.i
 
 # target to preprocess a source file
 CommonBehavior.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.i
 .PHONY : CommonBehavior.cpp.i
 
 CommonBehavior.s: CommonBehavior.cpp.s
@@ -273,7 +273,7 @@ CommonBehavior.s: CommonBehavior.cpp.s
 
 # target to generate assembly for a file
 CommonBehavior.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/CommonBehavior.cpp.s
 .PHONY : CommonBehavior.cpp.s
 
 DifferentialRobot.o: DifferentialRobot.cpp.o
@@ -281,7 +281,7 @@ DifferentialRobot.o: DifferentialRobot.cpp.o
 
 # target to build an object file
 DifferentialRobot.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.o
 .PHONY : DifferentialRobot.cpp.o
 
 DifferentialRobot.i: DifferentialRobot.cpp.i
@@ -289,7 +289,7 @@ DifferentialRobot.i: DifferentialRobot.cpp.i
 
 # target to preprocess a source file
 DifferentialRobot.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.i
 .PHONY : DifferentialRobot.cpp.i
 
 DifferentialRobot.s: DifferentialRobot.cpp.s
@@ -297,7 +297,7 @@ DifferentialRobot.s: DifferentialRobot.cpp.s
 
 # target to generate assembly for a file
 DifferentialRobot.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/DifferentialRobot.cpp.s
 .PHONY : DifferentialRobot.cpp.s
 
 JointMotor.o: JointMotor.cpp.o
@@ -305,7 +305,7 @@ JointMotor.o: JointMotor.cpp.o
 
 # target to build an object file
 JointMotor.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/JointMotor.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/JointMotor.cpp.o
 .PHONY : JointMotor.cpp.o
 
 JointMotor.i: JointMotor.cpp.i
@@ -313,7 +313,7 @@ JointMotor.i: JointMotor.cpp.i
 
 # target to preprocess a source file
 JointMotor.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/JointMotor.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/JointMotor.cpp.i
 .PHONY : JointMotor.cpp.i
 
 JointMotor.s: JointMotor.cpp.s
@@ -321,7 +321,7 @@ JointMotor.s: JointMotor.cpp.s
 
 # target to generate assembly for a file
 JointMotor.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/JointMotor.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/JointMotor.cpp.s
 .PHONY : JointMotor.cpp.s
 
 OmniRobot.o: OmniRobot.cpp.o
@@ -329,7 +329,7 @@ OmniRobot.o: OmniRobot.cpp.o
 
 # target to build an object file
 OmniRobot.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.o
 .PHONY : OmniRobot.cpp.o
 
 OmniRobot.i: OmniRobot.cpp.i
@@ -337,7 +337,7 @@ OmniRobot.i: OmniRobot.cpp.i
 
 # target to preprocess a source file
 OmniRobot.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.i
 .PHONY : OmniRobot.cpp.i
 
 OmniRobot.s: OmniRobot.cpp.s
@@ -345,7 +345,7 @@ OmniRobot.s: OmniRobot.cpp.s
 
 # target to generate assembly for a file
 OmniRobot.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/OmniRobot.cpp.s
 .PHONY : OmniRobot.cpp.s
 
 Planning.o: Planning.cpp.o
@@ -353,7 +353,7 @@ Planning.o: Planning.cpp.o
 
 # target to build an object file
 Planning.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/Planning.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/Planning.cpp.o
 .PHONY : Planning.cpp.o
 
 Planning.i: Planning.cpp.i
@@ -361,7 +361,7 @@ Planning.i: Planning.cpp.i
 
 # target to preprocess a source file
 Planning.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/Planning.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/Planning.cpp.i
 .PHONY : Planning.cpp.i
 
 Planning.s: Planning.cpp.s
@@ -369,7 +369,7 @@ Planning.s: Planning.cpp.s
 
 # target to generate assembly for a file
 Planning.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/Planning.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/Planning.cpp.s
 .PHONY : Planning.cpp.s
 
 RGBD.o: RGBD.cpp.o
@@ -377,7 +377,7 @@ RGBD.o: RGBD.cpp.o
 
 # target to build an object file
 RGBD.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/RGBD.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/RGBD.cpp.o
 .PHONY : RGBD.cpp.o
 
 RGBD.i: RGBD.cpp.i
@@ -385,7 +385,7 @@ RGBD.i: RGBD.cpp.i
 
 # target to preprocess a source file
 RGBD.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/RGBD.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/RGBD.cpp.i
 .PHONY : RGBD.cpp.i
 
 RGBD.s: RGBD.cpp.s
@@ -393,7 +393,7 @@ RGBD.s: RGBD.cpp.s
 
 # target to generate assembly for a file
 RGBD.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/RGBD.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/RGBD.cpp.s
 .PHONY : RGBD.cpp.s
 
 __/__/__/__/__/classes/agmInner/moc_agmInner.o: __/__/__/__/__/classes/agmInner/moc_agmInner.cxx.o
@@ -401,7 +401,7 @@ __/__/__/__/__/classes/agmInner/moc_agmInner.o: __/__/__/__/__/classes/agmInner/
 
 # target to build an object file
 __/__/__/__/__/classes/agmInner/moc_agmInner.cxx.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.o
 .PHONY : __/__/__/__/__/classes/agmInner/moc_agmInner.cxx.o
 
 __/__/__/__/__/classes/agmInner/moc_agmInner.i: __/__/__/__/__/classes/agmInner/moc_agmInner.cxx.i
@@ -409,7 +409,7 @@ __/__/__/__/__/classes/agmInner/moc_agmInner.i: __/__/__/__/__/classes/agmInner/
 
 # target to preprocess a source file
 __/__/__/__/__/classes/agmInner/moc_agmInner.cxx.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.i
 .PHONY : __/__/__/__/__/classes/agmInner/moc_agmInner.cxx.i
 
 __/__/__/__/__/classes/agmInner/moc_agmInner.s: __/__/__/__/__/classes/agmInner/moc_agmInner.cxx.s
@@ -417,7 +417,7 @@ __/__/__/__/__/classes/agmInner/moc_agmInner.s: __/__/__/__/__/classes/agmInner/
 
 # target to generate assembly for a file
 __/__/__/__/__/classes/agmInner/moc_agmInner.cxx.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/__/__/__/__/__/classes/agmInner/moc_agmInner.cxx.s
 .PHONY : __/__/__/__/__/classes/agmInner/moc_agmInner.cxx.s
 
 agmcommonbehaviorI.o: agmcommonbehaviorI.cpp.o
@@ -425,7 +425,7 @@ agmcommonbehaviorI.o: agmcommonbehaviorI.cpp.o
 
 # target to build an object file
 agmcommonbehaviorI.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.o
 .PHONY : agmcommonbehaviorI.cpp.o
 
 agmcommonbehaviorI.i: agmcommonbehaviorI.cpp.i
@@ -433,7 +433,7 @@ agmcommonbehaviorI.i: agmcommonbehaviorI.cpp.i
 
 # target to preprocess a source file
 agmcommonbehaviorI.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.i
 .PHONY : agmcommonbehaviorI.cpp.i
 
 agmcommonbehaviorI.s: agmcommonbehaviorI.cpp.s
@@ -441,7 +441,7 @@ agmcommonbehaviorI.s: agmcommonbehaviorI.cpp.s
 
 # target to generate assembly for a file
 agmcommonbehaviorI.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/agmcommonbehaviorI.cpp.s
 .PHONY : agmcommonbehaviorI.cpp.s
 
 agmexecutivetopicI.o: agmexecutivetopicI.cpp.o
@@ -449,7 +449,7 @@ agmexecutivetopicI.o: agmexecutivetopicI.cpp.o
 
 # target to build an object file
 agmexecutivetopicI.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.o
 .PHONY : agmexecutivetopicI.cpp.o
 
 agmexecutivetopicI.i: agmexecutivetopicI.cpp.i
@@ -457,7 +457,7 @@ agmexecutivetopicI.i: agmexecutivetopicI.cpp.i
 
 # target to preprocess a source file
 agmexecutivetopicI.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.i
 .PHONY : agmexecutivetopicI.cpp.i
 
 agmexecutivetopicI.s: agmexecutivetopicI.cpp.s
@@ -465,7 +465,7 @@ agmexecutivetopicI.s: agmexecutivetopicI.cpp.s
 
 # target to generate assembly for a file
 agmexecutivetopicI.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/agmexecutivetopicI.cpp.s
 .PHONY : agmexecutivetopicI.cpp.s
 
 commonbehaviorI.o: commonbehaviorI.cpp.o
@@ -473,7 +473,7 @@ commonbehaviorI.o: commonbehaviorI.cpp.o
 
 # target to build an object file
 commonbehaviorI.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.o
 .PHONY : commonbehaviorI.cpp.o
 
 commonbehaviorI.i: commonbehaviorI.cpp.i
@@ -481,7 +481,7 @@ commonbehaviorI.i: commonbehaviorI.cpp.i
 
 # target to preprocess a source file
 commonbehaviorI.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.i
 .PHONY : commonbehaviorI.cpp.i
 
 commonbehaviorI.s: commonbehaviorI.cpp.s
@@ -489,7 +489,7 @@ commonbehaviorI.s: commonbehaviorI.cpp.s
 
 # target to generate assembly for a file
 commonbehaviorI.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/commonbehaviorI.cpp.s
 .PHONY : commonbehaviorI.cpp.s
 
 genericmonitor.o: genericmonitor.cpp.o
@@ -497,7 +497,7 @@ genericmonitor.o: genericmonitor.cpp.o
 
 # target to build an object file
 genericmonitor.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.o
 .PHONY : genericmonitor.cpp.o
 
 genericmonitor.i: genericmonitor.cpp.i
@@ -505,7 +505,7 @@ genericmonitor.i: genericmonitor.cpp.i
 
 # target to preprocess a source file
 genericmonitor.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.i
 .PHONY : genericmonitor.cpp.i
 
 genericmonitor.s: genericmonitor.cpp.s
@@ -513,7 +513,7 @@ genericmonitor.s: genericmonitor.cpp.s
 
 # target to generate assembly for a file
 genericmonitor.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/genericmonitor.cpp.s
 .PHONY : genericmonitor.cpp.s
 
 genericworker.o: genericworker.cpp.o
@@ -521,7 +521,7 @@ genericworker.o: genericworker.cpp.o
 
 # target to build an object file
 genericworker.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/genericworker.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/genericworker.cpp.o
 .PHONY : genericworker.cpp.o
 
 genericworker.i: genericworker.cpp.i
@@ -529,7 +529,7 @@ genericworker.i: genericworker.cpp.i
 
 # target to preprocess a source file
 genericworker.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/genericworker.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/genericworker.cpp.i
 .PHONY : genericworker.cpp.i
 
 genericworker.s: genericworker.cpp.s
@@ -537,87 +537,87 @@ genericworker.s: genericworker.cpp.s
 
 # target to generate assembly for a file
 genericworker.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/genericworker.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/genericworker.cpp.s
 .PHONY : genericworker.cpp.s
 
-home/alvaro/robocomp/classes/agmInner/agmInner.o: home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o
-.PHONY : home/alvaro/robocomp/classes/agmInner/agmInner.o
+home/robocomp/robocomp/classes/agmInner/agmInner.o: home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o
+.PHONY : home/robocomp/robocomp/classes/agmInner/agmInner.o
 
 # target to build an object file
-home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o
-.PHONY : home/alvaro/robocomp/classes/agmInner/agmInner.cpp.o
+home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o:
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o
+.PHONY : home/robocomp/robocomp/classes/agmInner/agmInner.cpp.o
 
-home/alvaro/robocomp/classes/agmInner/agmInner.i: home/alvaro/robocomp/classes/agmInner/agmInner.cpp.i
-.PHONY : home/alvaro/robocomp/classes/agmInner/agmInner.i
+home/robocomp/robocomp/classes/agmInner/agmInner.i: home/robocomp/robocomp/classes/agmInner/agmInner.cpp.i
+.PHONY : home/robocomp/robocomp/classes/agmInner/agmInner.i
 
 # target to preprocess a source file
-home/alvaro/robocomp/classes/agmInner/agmInner.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.i
-.PHONY : home/alvaro/robocomp/classes/agmInner/agmInner.cpp.i
+home/robocomp/robocomp/classes/agmInner/agmInner.cpp.i:
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.i
+.PHONY : home/robocomp/robocomp/classes/agmInner/agmInner.cpp.i
 
-home/alvaro/robocomp/classes/agmInner/agmInner.s: home/alvaro/robocomp/classes/agmInner/agmInner.cpp.s
-.PHONY : home/alvaro/robocomp/classes/agmInner/agmInner.s
+home/robocomp/robocomp/classes/agmInner/agmInner.s: home/robocomp/robocomp/classes/agmInner/agmInner.cpp.s
+.PHONY : home/robocomp/robocomp/classes/agmInner/agmInner.s
 
 # target to generate assembly for a file
-home/alvaro/robocomp/classes/agmInner/agmInner.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/agmInner/agmInner.cpp.s
-.PHONY : home/alvaro/robocomp/classes/agmInner/agmInner.cpp.s
+home/robocomp/robocomp/classes/agmInner/agmInner.cpp.s:
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/agmInner/agmInner.cpp.s
+.PHONY : home/robocomp/robocomp/classes/agmInner/agmInner.cpp.s
 
-home/alvaro/robocomp/classes/qlog/qlog.o: home/alvaro/robocomp/classes/qlog/qlog.cpp.o
-.PHONY : home/alvaro/robocomp/classes/qlog/qlog.o
+home/robocomp/robocomp/classes/qlog/qlog.o: home/robocomp/robocomp/classes/qlog/qlog.cpp.o
+.PHONY : home/robocomp/robocomp/classes/qlog/qlog.o
 
 # target to build an object file
-home/alvaro/robocomp/classes/qlog/qlog.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.o
-.PHONY : home/alvaro/robocomp/classes/qlog/qlog.cpp.o
+home/robocomp/robocomp/classes/qlog/qlog.cpp.o:
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.o
+.PHONY : home/robocomp/robocomp/classes/qlog/qlog.cpp.o
 
-home/alvaro/robocomp/classes/qlog/qlog.i: home/alvaro/robocomp/classes/qlog/qlog.cpp.i
-.PHONY : home/alvaro/robocomp/classes/qlog/qlog.i
+home/robocomp/robocomp/classes/qlog/qlog.i: home/robocomp/robocomp/classes/qlog/qlog.cpp.i
+.PHONY : home/robocomp/robocomp/classes/qlog/qlog.i
 
 # target to preprocess a source file
-home/alvaro/robocomp/classes/qlog/qlog.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.i
-.PHONY : home/alvaro/robocomp/classes/qlog/qlog.cpp.i
+home/robocomp/robocomp/classes/qlog/qlog.cpp.i:
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.i
+.PHONY : home/robocomp/robocomp/classes/qlog/qlog.cpp.i
 
-home/alvaro/robocomp/classes/qlog/qlog.s: home/alvaro/robocomp/classes/qlog/qlog.cpp.s
-.PHONY : home/alvaro/robocomp/classes/qlog/qlog.s
+home/robocomp/robocomp/classes/qlog/qlog.s: home/robocomp/robocomp/classes/qlog/qlog.cpp.s
+.PHONY : home/robocomp/robocomp/classes/qlog/qlog.s
 
 # target to generate assembly for a file
-home/alvaro/robocomp/classes/qlog/qlog.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/qlog/qlog.cpp.s
-.PHONY : home/alvaro/robocomp/classes/qlog/qlog.cpp.s
+home/robocomp/robocomp/classes/qlog/qlog.cpp.s:
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/qlog/qlog.cpp.s
+.PHONY : home/robocomp/robocomp/classes/qlog/qlog.cpp.s
 
-home/alvaro/robocomp/classes/rapplication/rapplication.o: home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o
-.PHONY : home/alvaro/robocomp/classes/rapplication/rapplication.o
+home/robocomp/robocomp/classes/rapplication/rapplication.o: home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o
+.PHONY : home/robocomp/robocomp/classes/rapplication/rapplication.o
 
 # target to build an object file
-home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o
-.PHONY : home/alvaro/robocomp/classes/rapplication/rapplication.cpp.o
+home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o:
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o
+.PHONY : home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o
 
-home/alvaro/robocomp/classes/rapplication/rapplication.i: home/alvaro/robocomp/classes/rapplication/rapplication.cpp.i
-.PHONY : home/alvaro/robocomp/classes/rapplication/rapplication.i
+home/robocomp/robocomp/classes/rapplication/rapplication.i: home/robocomp/robocomp/classes/rapplication/rapplication.cpp.i
+.PHONY : home/robocomp/robocomp/classes/rapplication/rapplication.i
 
 # target to preprocess a source file
-home/alvaro/robocomp/classes/rapplication/rapplication.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.i
-.PHONY : home/alvaro/robocomp/classes/rapplication/rapplication.cpp.i
+home/robocomp/robocomp/classes/rapplication/rapplication.cpp.i:
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.i
+.PHONY : home/robocomp/robocomp/classes/rapplication/rapplication.cpp.i
 
-home/alvaro/robocomp/classes/rapplication/rapplication.s: home/alvaro/robocomp/classes/rapplication/rapplication.cpp.s
-.PHONY : home/alvaro/robocomp/classes/rapplication/rapplication.s
+home/robocomp/robocomp/classes/rapplication/rapplication.s: home/robocomp/robocomp/classes/rapplication/rapplication.cpp.s
+.PHONY : home/robocomp/robocomp/classes/rapplication/rapplication.s
 
 # target to generate assembly for a file
-home/alvaro/robocomp/classes/rapplication/rapplication.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/alvaro/robocomp/classes/rapplication/rapplication.cpp.s
-.PHONY : home/alvaro/robocomp/classes/rapplication/rapplication.cpp.s
+home/robocomp/robocomp/classes/rapplication/rapplication.cpp.s:
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.s
+.PHONY : home/robocomp/robocomp/classes/rapplication/rapplication.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/main.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -625,7 +625,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/main.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -633,7 +633,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/main.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 moc_agmcommonbehaviorI.o: moc_agmcommonbehaviorI.cxx.o
@@ -641,7 +641,7 @@ moc_agmcommonbehaviorI.o: moc_agmcommonbehaviorI.cxx.o
 
 # target to build an object file
 moc_agmcommonbehaviorI.cxx.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.o
 .PHONY : moc_agmcommonbehaviorI.cxx.o
 
 moc_agmcommonbehaviorI.i: moc_agmcommonbehaviorI.cxx.i
@@ -649,7 +649,7 @@ moc_agmcommonbehaviorI.i: moc_agmcommonbehaviorI.cxx.i
 
 # target to preprocess a source file
 moc_agmcommonbehaviorI.cxx.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.i
 .PHONY : moc_agmcommonbehaviorI.cxx.i
 
 moc_agmcommonbehaviorI.s: moc_agmcommonbehaviorI.cxx.s
@@ -657,7 +657,7 @@ moc_agmcommonbehaviorI.s: moc_agmcommonbehaviorI.cxx.s
 
 # target to generate assembly for a file
 moc_agmcommonbehaviorI.cxx.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_agmcommonbehaviorI.cxx.s
 .PHONY : moc_agmcommonbehaviorI.cxx.s
 
 moc_agmexecutivetopicI.o: moc_agmexecutivetopicI.cxx.o
@@ -665,7 +665,7 @@ moc_agmexecutivetopicI.o: moc_agmexecutivetopicI.cxx.o
 
 # target to build an object file
 moc_agmexecutivetopicI.cxx.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.o
 .PHONY : moc_agmexecutivetopicI.cxx.o
 
 moc_agmexecutivetopicI.i: moc_agmexecutivetopicI.cxx.i
@@ -673,7 +673,7 @@ moc_agmexecutivetopicI.i: moc_agmexecutivetopicI.cxx.i
 
 # target to preprocess a source file
 moc_agmexecutivetopicI.cxx.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.i
 .PHONY : moc_agmexecutivetopicI.cxx.i
 
 moc_agmexecutivetopicI.s: moc_agmexecutivetopicI.cxx.s
@@ -681,7 +681,7 @@ moc_agmexecutivetopicI.s: moc_agmexecutivetopicI.cxx.s
 
 # target to generate assembly for a file
 moc_agmexecutivetopicI.cxx.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_agmexecutivetopicI.cxx.s
 .PHONY : moc_agmexecutivetopicI.cxx.s
 
 moc_commonbehaviorI.o: moc_commonbehaviorI.cxx.o
@@ -689,7 +689,7 @@ moc_commonbehaviorI.o: moc_commonbehaviorI.cxx.o
 
 # target to build an object file
 moc_commonbehaviorI.cxx.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.o
 .PHONY : moc_commonbehaviorI.cxx.o
 
 moc_commonbehaviorI.i: moc_commonbehaviorI.cxx.i
@@ -697,7 +697,7 @@ moc_commonbehaviorI.i: moc_commonbehaviorI.cxx.i
 
 # target to preprocess a source file
 moc_commonbehaviorI.cxx.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.i
 .PHONY : moc_commonbehaviorI.cxx.i
 
 moc_commonbehaviorI.s: moc_commonbehaviorI.cxx.s
@@ -705,7 +705,7 @@ moc_commonbehaviorI.s: moc_commonbehaviorI.cxx.s
 
 # target to generate assembly for a file
 moc_commonbehaviorI.cxx.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_commonbehaviorI.cxx.s
 .PHONY : moc_commonbehaviorI.cxx.s
 
 moc_genericmonitor.o: moc_genericmonitor.cxx.o
@@ -713,7 +713,7 @@ moc_genericmonitor.o: moc_genericmonitor.cxx.o
 
 # target to build an object file
 moc_genericmonitor.cxx.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.o
 .PHONY : moc_genericmonitor.cxx.o
 
 moc_genericmonitor.i: moc_genericmonitor.cxx.i
@@ -721,7 +721,7 @@ moc_genericmonitor.i: moc_genericmonitor.cxx.i
 
 # target to preprocess a source file
 moc_genericmonitor.cxx.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.i
 .PHONY : moc_genericmonitor.cxx.i
 
 moc_genericmonitor.s: moc_genericmonitor.cxx.s
@@ -729,7 +729,7 @@ moc_genericmonitor.s: moc_genericmonitor.cxx.s
 
 # target to generate assembly for a file
 moc_genericmonitor.cxx.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_genericmonitor.cxx.s
 .PHONY : moc_genericmonitor.cxx.s
 
 moc_genericworker.o: moc_genericworker.cxx.o
@@ -737,7 +737,7 @@ moc_genericworker.o: moc_genericworker.cxx.o
 
 # target to build an object file
 moc_genericworker.cxx.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.o
 .PHONY : moc_genericworker.cxx.o
 
 moc_genericworker.i: moc_genericworker.cxx.i
@@ -745,7 +745,7 @@ moc_genericworker.i: moc_genericworker.cxx.i
 
 # target to preprocess a source file
 moc_genericworker.cxx.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.i
 .PHONY : moc_genericworker.cxx.i
 
 moc_genericworker.s: moc_genericworker.cxx.s
@@ -753,7 +753,7 @@ moc_genericworker.s: moc_genericworker.cxx.s
 
 # target to generate assembly for a file
 moc_genericworker.cxx.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_genericworker.cxx.s
 .PHONY : moc_genericworker.cxx.s
 
 moc_specificmonitor.o: moc_specificmonitor.cxx.o
@@ -761,7 +761,7 @@ moc_specificmonitor.o: moc_specificmonitor.cxx.o
 
 # target to build an object file
 moc_specificmonitor.cxx.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.o
 .PHONY : moc_specificmonitor.cxx.o
 
 moc_specificmonitor.i: moc_specificmonitor.cxx.i
@@ -769,7 +769,7 @@ moc_specificmonitor.i: moc_specificmonitor.cxx.i
 
 # target to preprocess a source file
 moc_specificmonitor.cxx.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.i
 .PHONY : moc_specificmonitor.cxx.i
 
 moc_specificmonitor.s: moc_specificmonitor.cxx.s
@@ -777,7 +777,7 @@ moc_specificmonitor.s: moc_specificmonitor.cxx.s
 
 # target to generate assembly for a file
 moc_specificmonitor.cxx.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_specificmonitor.cxx.s
 .PHONY : moc_specificmonitor.cxx.s
 
 moc_specificworker.o: moc_specificworker.cxx.o
@@ -785,7 +785,7 @@ moc_specificworker.o: moc_specificworker.cxx.o
 
 # target to build an object file
 moc_specificworker.cxx.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.o
 .PHONY : moc_specificworker.cxx.o
 
 moc_specificworker.i: moc_specificworker.cxx.i
@@ -793,7 +793,7 @@ moc_specificworker.i: moc_specificworker.cxx.i
 
 # target to preprocess a source file
 moc_specificworker.cxx.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.i
 .PHONY : moc_specificworker.cxx.i
 
 moc_specificworker.s: moc_specificworker.cxx.s
@@ -801,7 +801,7 @@ moc_specificworker.s: moc_specificworker.cxx.s
 
 # target to generate assembly for a file
 moc_specificworker.cxx.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/moc_specificworker.cxx.s
 .PHONY : moc_specificworker.cxx.s
 
 specificmonitor.o: specificmonitor.cpp.o
@@ -809,7 +809,7 @@ specificmonitor.o: specificmonitor.cpp.o
 
 # target to build an object file
 specificmonitor.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.o
 .PHONY : specificmonitor.cpp.o
 
 specificmonitor.i: specificmonitor.cpp.i
@@ -817,7 +817,7 @@ specificmonitor.i: specificmonitor.cpp.i
 
 # target to preprocess a source file
 specificmonitor.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.i
 .PHONY : specificmonitor.cpp.i
 
 specificmonitor.s: specificmonitor.cpp.s
@@ -825,7 +825,7 @@ specificmonitor.s: specificmonitor.cpp.s
 
 # target to generate assembly for a file
 specificmonitor.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/specificmonitor.cpp.s
 .PHONY : specificmonitor.cpp.s
 
 specificworker.o: specificworker.cpp.o
@@ -833,7 +833,7 @@ specificworker.o: specificworker.cpp.o
 
 # target to build an object file
 specificworker.cpp.o:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/specificworker.cpp.o
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/specificworker.cpp.o
 .PHONY : specificworker.cpp.o
 
 specificworker.i: specificworker.cpp.i
@@ -841,7 +841,7 @@ specificworker.i: specificworker.cpp.i
 
 # target to preprocess a source file
 specificworker.cpp.i:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/specificworker.cpp.i
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/specificworker.cpp.i
 .PHONY : specificworker.cpp.i
 
 specificworker.s: specificworker.cpp.s
@@ -849,7 +849,7 @@ specificworker.s: specificworker.cpp.s
 
 # target to generate assembly for a file
 specificworker.cpp.s:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/specificworker.cpp.s
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(MAKE) -f src/CMakeFiles/agentGetState.dir/build.make src/CMakeFiles/agentGetState.dir/specificworker.cpp.s
 .PHONY : specificworker.cpp.s
 
 # Help Target
@@ -913,15 +913,15 @@ help:
 	@echo "... genericworker.o"
 	@echo "... genericworker.i"
 	@echo "... genericworker.s"
-	@echo "... home/alvaro/robocomp/classes/agmInner/agmInner.o"
-	@echo "... home/alvaro/robocomp/classes/agmInner/agmInner.i"
-	@echo "... home/alvaro/robocomp/classes/agmInner/agmInner.s"
-	@echo "... home/alvaro/robocomp/classes/qlog/qlog.o"
-	@echo "... home/alvaro/robocomp/classes/qlog/qlog.i"
-	@echo "... home/alvaro/robocomp/classes/qlog/qlog.s"
-	@echo "... home/alvaro/robocomp/classes/rapplication/rapplication.o"
-	@echo "... home/alvaro/robocomp/classes/rapplication/rapplication.i"
-	@echo "... home/alvaro/robocomp/classes/rapplication/rapplication.s"
+	@echo "... home/robocomp/robocomp/classes/agmInner/agmInner.o"
+	@echo "... home/robocomp/robocomp/classes/agmInner/agmInner.i"
+	@echo "... home/robocomp/robocomp/classes/agmInner/agmInner.s"
+	@echo "... home/robocomp/robocomp/classes/qlog/qlog.o"
+	@echo "... home/robocomp/robocomp/classes/qlog/qlog.i"
+	@echo "... home/robocomp/robocomp/classes/qlog/qlog.s"
+	@echo "... home/robocomp/robocomp/classes/rapplication/rapplication.o"
+	@echo "... home/robocomp/robocomp/classes/rapplication/rapplication.i"
+	@echo "... home/robocomp/robocomp/classes/rapplication/rapplication.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -963,6 +963,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/alvaro/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/robocomp/robocomp/components/robocomp-agm-basic/components/agentGetStateFromRCIS && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -71,9 +71,9 @@ SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/opt/robocomp/include"
   "/classes"
   "."
-  "/home/alvaro/robocomp/classes"
-  "/home/alvaro/robocomp/libs"
-  "/home/alvaro/robocomp/interfaces"
+  "/home/dmedina/robocomp/classes"
+  "/home/dmedina/robocomp/libs"
+  "/home/dmedina/robocomp/interfaces"
   "/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

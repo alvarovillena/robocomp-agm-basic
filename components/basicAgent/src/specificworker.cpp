@@ -73,7 +73,61 @@ void SpecificWorker::compute()
 {
 
 	qDebug()<<"Current action: "<<QString::fromStdString(action);
+	AGMModelPrinter::printWorld(worldModel);
+		
+	int robotId, personId, personStateId;
+	
+	robotId = worldModel->getIdentifierByType("robot");
+	personId =  worldModel->getIdentifierByType("person");
+	
+	
+	if(robotId>0 && personId==-1)
+	{
+	
+		QMutexLocker locker(mutex);
+	
+		AGMModel::SPtr newModel(new AGMModel(worldModel));	
+		
+		AGMModelSymbol::SPtr nodeRobot =worldModel->getSymbol(robotId);		 // Crear desde 0	
+		AGMModelSymbol::SPtr nodePerson =newModel->newSymbol("person");		 // Crear desde 0	
+		AGMModelSymbol::SPtr nodePersonState =newModel->newSymbol("personState");		 // Crear desde 0		
+	
+		personId = nodePerson->identifier;		
+		personStateId = nodePersonState->identifier;		
+	
+		printf("robotId: %d \n",robotId);
+		printf("personId: %d \n",personId);
+		printf("personStateId: %d \n\n\n",personStateId);
+	
+	
+		if(personId>0 && personStateId>0)
+		{
+		
+			personId = newModel->getIdentifierByType("person");
+			personStateId = newModel->getIdentifierByType("personState");
+			
+			printf("personId: %d \n",personId);
+			printf("personStateId: %d \n",personStateId);
+	
 
+			newModel->addEdge(nodeRobot, nodePerson,"knows");
+			newModel->addEdge(nodePerson, nodePersonState ,"nothing");
+			
+		 	//newModel->addEdgeByIdentifiers(robotId, personId,"knows");
+		 	//newModel->addEdgeByIdentifiers(personId, personStateId,"nothing");
+		 	
+	 		AGMModelPrinter::printWorld(newModel);
+		
+			qDebug()<<"----------- MODIFICATION -----------------------";
+ 			sendModificationProposal(worldModel, newModel);			
+ 			
+	 		AGMModelPrinter::printWorld(worldModel);
+		}
+	}
+	
+	
+	
+	
 
 // 	try
 // 	{
